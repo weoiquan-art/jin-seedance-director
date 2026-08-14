@@ -1,0 +1,13 @@
+interface:
+  display_name: JIN Seedance 导演
+  short_description: 按 JIN 方法论编写、诊断与迭代 Seedance 视频提示词
+  default_prompt: 使用 $jin-seedance-director 为我的视频任务编写一份可直接生成并经过自检的 Seedance 提示词。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

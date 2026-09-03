@@ -43,6 +43,8 @@ description: Build, revise, and study AI video prompts through a process-first d
 
 情绪优先不等于忽略连续性。跨多个镜头时仍要保持发型、服装、面部和身体状态一致。
 
+按角色进入画面的时机分配资产：场景图中已经出现、哪怕只露出局部或没有露脸的人物，可以先由场景图承载其初始存在与位置，再用镜头内容和表演要求驱动动作；后续才进入画面的新角色，若需要稳定外观，应提供单独的角色资产。角色资产不是所有人物的必填项，而是用来补足场景图没有提供的身份锚点。
+
 ### 3. 根据时长决定镜头数
 
 先确认每个候选镜头能否拥有清楚的起点、过程和结果。若时长不足，减少镜头，不压缩全部流程。
@@ -57,7 +59,7 @@ description: Build, revise, and study AI video prompts through a process-first d
 - **视觉风格**：分别描述整体影像、角色呈现和环境呈现。
 - **参考图说明**：为每份参考分配职责，并明确不继承的内容。
 
-角色四视图可以只负责资产锚定；它不替代镜头内容和表演要求。背景图可以只负责场景搭建；不要从界面显示状态推断素材是否存在。
+角色四视图可以只负责资产锚定；它不替代镜头内容和表演要求。背景图可以同时承载空间结构与场景中已经存在的人物；后续新入画的角色另行绑定资产。不要从界面显示状态推断素材是否存在。
 
 风格候选预设：
 
@@ -99,4 +101,4 @@ description: Build, revise, and study AI video prompts through a process-first d
 3. 多个样本重复出现后，才升级为流程规则。
 4. 新发现优先修改模板格子或流程顺序；只有无法被模板表达时才增加说明。
 
-研究当前两段样本时，读 [references/sample-findings.md](references/sample-findings.md) 和 [references/original-prompt-treatment-scan.md](references/original-prompt-treatment-scan.md)，并按需检查 `assets/samples/` 中的原始视频与场景图。
+研究当前样本时，读 [references/sample-findings.md](references/sample-findings.md) 及对应的原始提示词文件，并按需检查 `assets/samples/` 中的原始视频与场景图。

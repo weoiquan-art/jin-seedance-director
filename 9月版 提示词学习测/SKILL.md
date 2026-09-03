@@ -1,6 +1,6 @@
 ---
 name: jin-video-director-flow
-description: Build, revise, and study AI video prompts through a process-first director workflow. Use when turning an idea, image reference, video reference, or emotional beat into a duration-aware shot sequence; when defining terminology and reference responsibilities; when writing explicit shot content, camera position, foreground/midground/background staging, micro-performance, sound, and predicted failure guards; or when extracting reusable prompt methods from paired original prompts and generated videos.
+description: Build, revise, and study AI video prompts through a process-first director workflow. Use when turning a rough idea, image reference, video reference, or emotional beat into a duration-aware shot sequence; when determining the minimum needed character, scene, storyboard, or continuity assets; when writing explicit shot content, camera position, foreground/midground/background staging, micro-performance, sound, and predicted failure guards; or when extracting reusable prompt methods from paired original prompts and generated videos.
 ---
 
 # JIN Video Director Flow
@@ -37,6 +37,8 @@ description: Build, revise, and study AI video prompts through a process-first d
 
 只询问会改变镜头数量、角色身份、核心动作或结尾的缺失信息。
 
+若用户只提供粗糙想法，或希望 AI 同时构建提示词并提醒需要什么素材，先读 [references/director-thinking.md](references/director-thinking.md)。接受自然语言碎片，不要求用户预先填写完整导演模板。
+
 ### 2. 选择角色模式
 
 - **身份优先**：固定 IP、连续系列或必须匹配脸与服装时，使用角色参考。
@@ -45,6 +47,8 @@ description: Build, revise, and study AI video prompts through a process-first d
 情绪优先不等于忽略连续性。跨多个镜头时仍要保持发型、服装、面部和身体状态一致。
 
 按角色进入画面的时机分配资产：场景图中已经出现、哪怕只露出局部或没有露脸的人物，可以先由场景图承载其初始存在与位置，再用镜头内容和表演要求驱动动作；后续才进入画面的新角色，若需要稳定外观，应提供单独的角色资产。角色资产不是所有人物的必填项，而是用来补足场景图没有提供的身份锚点。
+
+按本镜真正可见的角度与姿态选择定向资产：场景图可以承载人物的初始位置和构图关系，但不自动等于精确身份资产。镜头主要看背影／侧背影坐姿时，可以提供对应的坐姿轮廓角色图；后续会显露正脸时，再补面部或正面资产。不机械要求与本镜无关的完整多视图。用户明确说明真实资产与界面显示不一致时，以用户说明为准，不从错配预览反推生成输入。
 
 ### 3. 根据时长决定镜头数
 
@@ -82,6 +86,8 @@ description: Build, revise, and study AI video prompts through a process-first d
 
 - **镜头内容**：唯一任务、景别、水平角度、纵向角度、摄影机运动、前景／中景／后景、起幅、过程、落幅、焦点变化、镜头内不变量和剪辑出口。
 - **表演要求**：把情绪写成眼球、眼睑、呼吸、手指、肩膀、下颌、头部、重心和节奏等可见变化。
+
+涉及连续镜头或动接时，增加**衔接要求**；摄影机运动会逐层揭示空间时，区分**画面结构**与**画面动作**。具体职责见注释模板。
 
 不要只写“紧张、悲伤、坚定、虚弱”。把这些词翻译成能被看见的动作。
 

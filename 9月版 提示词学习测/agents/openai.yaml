@@ -1,0 +1,14 @@
+interface:
+  display_name: JIN Video Director Flow
+  short_description: 用流程化镜头卡构建可执行、可检查、可衔接的导演提示词
+  default_prompt: Use $jin-video-director-flow to turn my idea and references into
+    a process-first, shot-by-shot video prompt.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

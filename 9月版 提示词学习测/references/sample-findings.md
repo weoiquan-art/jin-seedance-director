@@ -10,7 +10,9 @@
 - 场景材料：`assets/samples/scene-reference-occupied.png`、`assets/samples/scene-reference-empty.png`
 - 第三段样本原始提示词：`references/original-prompt-window-dialogue.md`
 - 故事板样本原始提示词：`references/original-prompt-stair-reunion-storyboard.md`
-- 故事板样本五张参考：`assets/samples/stair-reunion-face-b.png`、`stair-reunion-outfit-b.png`、`stair-reunion-character-a.png`、`stair-reunion-scene.png`、`stair-reunion-storyboard.png`
+- 故事板样本五张参考：`assets/samples/stair-reunion-face-b.png`、`stair-reunion-outfit-b.jpg`、`stair-reunion-character-a.jpg`、`stair-reunion-scene.jpg`、`stair-reunion-storyboard.jpg`
+
+为保证 Skill 仓库中的样本可稳定读取，故事板样本的大尺寸图片与视频保存为视觉内容、画面顺序和时长不变的轻量化副本；原始提示词文本保持不改写。
 
 用户后续更正：治疗台样本实际输入包含一张魏的角色四视图，以及两张背景／场景图。角色四视图用于维持角色资产；两张背景图用于场景结构与氛围。界面未显示角色图属于显示问题，不能据此总结为“没有使用角色参考图”。场景图中的人物位置不应自动成为角色身份锚点。原始提示词文本保留输入记录，后续更正单独标明。
 
